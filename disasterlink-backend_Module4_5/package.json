@@ -1,0 +1,26 @@
+{
+  "name": "disasterlink-backend",
+  "version": "1.0.0",
+  "description": "DisasterLink backend API - offline disaster communication and rescue coordination",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "seed-admin-key": "node scripts/print-admin-key.js",
+    "lora-events": "node scripts/show-lora-events.js",
+    "test:qa": "node scripts/qa-integration.js",
+    "test:protocol": "node scripts/test-lora-dl2.js",
+    "test": "npm run test:qa && npm run test:protocol"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

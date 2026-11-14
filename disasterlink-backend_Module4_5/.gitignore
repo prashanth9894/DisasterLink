@@ -1,0 +1,9 @@
+node_modules/
+data/
+.env
+esp32/field-node/config.h
+esp32/gateway/secrets.h
+data/*.db*
+*.log
+.idea/
+.gradle/
